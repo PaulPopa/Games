@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<Object name="ProfileCreationMenu">
+  <SpriteComponent
+    texture ="main_menu.png"
+    size="1280, 720"
+    >
+  </SpriteComponent>
+
+  <Object name="Create Profile"
+          pos="540.5, 300"
+          >
+    <ButtonComponent
+      texture_focused ="create_profile_button_shaded.png"
+      texture_unfocused ="create_profile_button.png"
+      next_menu ="GameMenu"
+      size="199, 40"
+      type ="menu_changer">
+
+    </ButtonComponent>
+  </Object>
+
+  <Object name="Cancel Creation"
+          pos="580, 350">
+    <ButtonComponent
+      texture_focused ="cancel_creation_button_shaded.png"
+      texture_unfocused ="cancel_creation_button.png"
+      next_menu ="MainMenu"
+      size="120, 40"
+      type ="menu_changer">
+      
+    </ButtonComponent>
+  </Object>
+
+  <ProfileCreationMenu>
+    
+  </ProfileCreationMenu>
+</Object>
+

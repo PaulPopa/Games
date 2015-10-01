@@ -1,0 +1,55 @@
+﻿Build started 01/10/2015 12:25:23.
+     1>Project "C:\PAUL\University\Visual Studio Workspace\MyFramework\MyFramework\MyFramework.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\PAUL\University\Visual Studio\VC\bin\CL.exe /c /I"C:\PAUL\University\Visual Studio Workspace\MyFramework\Resources" /I"C:\PAUL\University\Visual Studio Workspace\MyFramework\Src\Profiles" /I"C:\PAUL\University\Visual Studio Workspace\MyFramework\Src\Map" /I"C:\PAUL\University\Visual Studio Workspace\MyFramework\Src\Helpers" /I"C:\PAUL\University\C++ libraries\SFML-2.3.1\include" /I"C:\PAUL\University\Visual Studio Workspace\MyFramework\Src\tinyxml" /I"C:\PAUL\University\Visual Studio Workspace\MyFramework\Src\Scene" /I"C:\PAUL\University\Visual Studio Workspace\MyFramework\Src\Menus" /I"C:\PAUL\University\Visual Studio Workspace\MyFramework\Src\Input" /I"C:\PAUL\University\Visual Studio Workspace\MyFramework\Src\Factory" /I"C:\PAUL\University\Visual Studio Workspace\MyFramework\Src\Console" /I"C:\PAUL\University\Visual Studio Workspace\MyFramework\Src" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\Src\Scene\EditableTextBox.cpp
+         EditableTextBox.cpp
+     1>c:\paul\university\visual studio workspace\myframework\src\scene\editabletextbox.cpp(58): warning C4244: 'argument' : conversion from 'float' to 'sf::Uint8', possible loss of data
+       Link:
+         C:\PAUL\University\Visual Studio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\PAUL\University\Visual Studio Workspace\MyFramework\Debug\MyFramework.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\PAUL\University\C++ libraries\SFML-2.3.1\lib" "sfml-graphics-d.lib" "sfml-window-d.lib" "sfml-main-d.lib" "sfml-system-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\PAUL\University\Visual Studio Workspace\MyFramework\Debug\MyFramework.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\PAUL\University\Visual Studio Workspace\MyFramework\Debug\MyFramework.lib" /MACHINE:X86 Debug\MyFramework.res
+         Debug\App.obj
+         Debug\ConsoleCommandsHandler.obj
+         Debug\ConsoleComponent.obj
+         Debug\ConsoleInputHandler.obj
+         Debug\ComponentCreator.obj
+         Debug\ComponentCreatorImpl.obj
+         Debug\ComponentFactory.obj
+         Debug\Helpers.obj
+         Debug\RNG.obj
+         Debug\Input.obj
+         Debug\Main.obj
+         Debug\Map.obj
+         Debug\MapComponent.obj
+         Debug\MapGenerator.obj
+         Debug\Tile.obj
+         Debug\GamePausedMenu.obj
+         Debug\MainGame.obj
+         Debug\MainMenu.obj
+         Debug\MenuHandler.obj
+         Debug\OptionsManager.obj
+         Debug\OptionsMenu.obj
+         Debug\ProfileCreationMenu.obj
+         Debug\Profile.obj
+         Debug\ProfilesManager.obj
+         Debug\ButtonComponent.obj
+         Debug\CheckboxComponent.obj
+         Debug\Component.obj
+         Debug\EditableTextBox.obj
+         Debug\InputTextBoxComponent.obj
+         Debug\Object.obj
+         Debug\ObjectHelpers.obj
+         Debug\PlayerMovementComponent.obj
+         Debug\Scene.obj
+         Debug\SpriteComponent.obj
+         Debug\SpriteSheetComponent.obj
+         Debug\TextComponent.obj
+         Debug\STAT.obj
+         Debug\tinystr.obj
+         Debug\tinyxml.obj
+         Debug\tinyxmlerror.obj
+         Debug\tinyxmlparser.obj
+         MyFramework.vcxproj -> C:\PAUL\University\Visual Studio Workspace\MyFramework\Debug\MyFramework.exe
+     1>Done Building Project "C:\PAUL\University\Visual Studio Workspace\MyFramework\MyFramework\MyFramework.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.00

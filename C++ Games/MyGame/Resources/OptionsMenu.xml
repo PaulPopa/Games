@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<Object name="OptionsMenu"
+        >
+
+  <OptionsMenu>
+
+  </OptionsMenu>
+  <SpriteComponent
+    texture ="options_menu.png"
+    size="1280, 720"
+    >
+
+  </SpriteComponent>
+
+  <Object name="FullscreenCheckbox"
+    pos="535, 200">
+
+    <CheckboxComponent
+      texture_focused="button_checkbox_focused.png"
+      texture_unfocused="button_checkbox_unfocused.png"
+      texture_check="button_checkbox_check.png"
+      size="32, 32"
+     >
+    </CheckboxComponent>
+
+    <Object name="FullScreenTextHolder"
+            pos="40, 0"
+        >
+      <TextComponent
+      text="Fullscreen"
+      font="bellota.otf"
+      font_size="25"
+      color="104, 104, 104"
+      >
+      
+      </TextComponent> 
+    </Object>
+  </Object>
+
+  <Object name="ApplyButton"
+          pos="170, 520" 
+          >
+    <ButtonComponent
+      texture_focused="apply_button_shaded.png"
+      texture_unfocused="apply_button.png"
+      size="106, 40"
+      type="default">
+      
+    </ButtonComponent>
+  </Object>
+ 
+
+  <Object name="CancelButton"
+          pos="970, 520"
+          >
+    <ButtonComponent
+      texture_focused="cancel_button_shaded.png"
+      texture_unfocused="cancel_button.png"
+      size="120, 40"
+      type="default">
+
+    </ButtonComponent>
+  </Object>
+</Object>

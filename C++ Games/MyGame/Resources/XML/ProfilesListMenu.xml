@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='us-ascii'?>
+
+<Object name="ProfilesListMenu">
+
+  <SpriteComponent
+    texture ="main_menu.png"
+    size="1280, 720"
+    >
+  </SpriteComponent>
+
+  <Object name="SelectProfile"
+          pos="100, 600"
+          enabled="0"
+          >
+
+    <ButtonComponent
+      texture_focused ="simple_button_background_focused.png"
+      texture_unfocused ="simple_button_background.png"
+      next_menu ="MainMenu"
+      size="220, 40"
+      type ="default"
+      text="Select Profile"
+      text_font="bellota.otf"
+      text_size="25"
+      text_color="100, 100, 100"
+      text_highlight_color="10, 10, 255"
+      has_textures="1"
+      text_highlights="1"
+      >
+
+    </ButtonComponent>
+  </Object>
+
+  <Object name="Back"
+          pos="750, 600"
+          >
+
+    <ButtonComponent
+      texture_focused ="simple_button_background_focused.png"
+      texture_unfocused ="simple_button_background.png"
+      next_menu ="MainMenu"
+      size="220, 40"
+      type ="menu_changer"
+      text="Back"
+      text_font="bellota.otf"
+      text_size="25"
+      text_color="100, 100, 100"
+      text_highlight_color="10, 10, 255"
+      has_textures="1"
+      text_highlights="1"
+      >
+
+    </ButtonComponent>
+  </Object>
+
+  <ProfilesListMenu
+    
+    >
+
+  </ProfilesListMenu>
+
+</Object>

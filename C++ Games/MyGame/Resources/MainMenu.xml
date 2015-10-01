@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='us-ascii'?>
+
+<Object name="MainMenu" rotation="0">
+
+  <SpriteComponent
+    texture ="main_menu.png"
+    size="1280, 720"
+    >
+  </SpriteComponent>
+
+  <Object name="NewGameButton"
+          pos="557, 300"
+          >
+
+    <ButtonComponent
+      texture_focused ="button.png"
+      texture_unfocused ="button2.png"
+      next_menu ="ProfileCreationMenu"
+      size="166, 40"
+      type ="menu_changer"
+      >
+    
+    </ButtonComponent>
+  </Object>
+
+  <Object name="OptionsButton"
+          pos="575.5, 350"
+          >
+    <ButtonComponent 
+      texture_focused ="options.png"
+      texture_unfocused ="options_shaded.png"
+      next_menu ="OptionsMenu"
+      size="129, 40"
+      type ="menu_changer"
+      >
+    
+    </ButtonComponent>
+  </Object>
+
+  <Object name="ExitButton"
+          pos="597.5, 400"
+          >
+    <ButtonComponent 
+     texture_focused ="exit_button.png"
+     texture_unfocused ="exit_button_shaded.png"
+     size="85, 40"
+     type ="exit"
+      >
+      
+    </ButtonComponent>
+  </Object>
+
+  <MainMenu>
+
+  </MainMenu>
+
+</Object>

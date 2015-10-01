@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='us-ascii'?>
+
+<Object>
+
+  <ButtonComponent
+      texture_focused ="simple_button_background_focused.png"
+      texture_unfocused ="simple_button_background.png"
+      next_menu ="ProfilesListMenu"
+      size="220, 40"
+      type ="default"
+      text_font="bellota.otf"
+      text_size="25"
+      text_color="100, 100, 100"
+      text_highlight_color="10, 10, 255"
+      has_textures="1"
+      text_highlights="1"
+      style="deep_on_click"
+      >
+
+  </ButtonComponent>
+
+</Object>

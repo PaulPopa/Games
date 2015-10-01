@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='us-ascii'?>
+
+<Map>
+  <Squares
+    wwww="SquaresTextures/wwww.png"
+    wwwd="SquaresTextures/wwwd.png"
+    wwdw="SquaresTextures/wwdw.png"
+    wwdd="SquaresTextures/wwdd.png"
+    wdww="SquaresTextures/wdww.png"
+    wdwd="SquaresTextures/wdwd.png"
+    wddw="SquaresTextures/wddw.png"
+    wddd="SquaresTextures/wddd.png"
+    dwww="SquaresTextures/dwww.png"
+    dwwd="SquaresTextures/dwwd.png"
+    dwdw="SquaresTextures/dwdw.png"
+    dwdd="SquaresTextures/dwdd.png"
+    ddww="SquaresTextures/ddww.png"
+    ddwd="SquaresTextures/ddwd.png"
+    dddw="SquaresTextures/dddw.png"
+    dddd="SquaresTextures/dddd.png"
+    >
+  </Squares>
+
+  <Intervals
+    water="-11, -1"
+    dirt="-1, 11"
+    >
+  </Intervals>
+
+  <Size
+    rows="100"
+    columns="100"
+    >
+    
+  </Size>
+
+  <TileSize
+    tile_size="200, 100">
+    
+  </TileSize>
+</Map>

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<Object name="GamePausedMenu">
+
+  <GamePausedMenu>
+
+  </GamePausedMenu>
+
+  <SpriteComponent
+    texture ="main_menu.png"
+    size="1280, 720"
+    >
+
+  </SpriteComponent>
+
+  <Object name="BackToGame"
+          pos="530, 300"
+          >
+    <ButtonComponent name="back_to_game"
+     texture_focused ="back_to_game.png"
+     texture_unfocused ="back_to_game_shaded.png"
+     next_menu ="GameMenu"
+     size="210, 40"
+     type="menu_changer"
+      >
+
+    </ButtonComponent>
+  </Object>
+
+  <Object name="BackToMainMenu"
+          pos="551.5, 350"
+          >
+    <ButtonComponent name="go_to_main_menu"
+     texture_focused ="go_to_main_menu.png"
+     texture_unfocused ="go_to_main_menu_shaded.png"
+     next_menu ="MainMenu"
+     size="177, 40"
+     type="menu_changer"
+    >
+
+    </ButtonComponent>
+  </Object>
+  
+</Object>

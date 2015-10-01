@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Object>
+
+  <SpriteComponent
+    texture ="main_menu.png"
+    size="1280, 720"
+    >
+  </SpriteComponent>
+
+  <Object name="CreateButton"
+          pos="170, 520"
+          >
+    <ButtonComponent
+      texture_focused="simple_button_background_focused.png"
+      texture_unfocused="simple_button_background.png"
+      size="200, 40"
+      type="default"
+      text="Create"
+      text_font="bellota.otf"
+      text_size="25"
+      text_color="100, 100, 100"
+      text_highlight_color="10, 10, 255"
+      has_textures="1"
+      text_highlights="1"
+      >
+
+    </ButtonComponent>
+  </Object>
+
+
+  <Object name="CancelButton"
+          pos="970, 520"
+          >
+    <ButtonComponent
+      texture_focused="simple_button_background_focused.png"
+      texture_unfocused="simple_button_background.png"
+      size="120, 40"
+      type="default"
+      text="Cancel"
+      text_font="bellota.otf"
+      text_size="25"
+      text_color="100, 100, 100"
+      text_highlight_color="10, 10, 255"
+      has_textures="1"
+      text_highlights="1"
+      >
+
+    </ButtonComponent>
+  </Object>
+
+  <Object name="ProfileTextBox"
+          pos="500, 320"
+          >
+    <EditableTextBox
+      texture_selected="text_box_shaded.png"
+      texture_unselected="text_box.png"
+      size="250, 40"
+      font="arial.ttf"
+      color="255, 80, 133"
+      font_size="30"
+      max_length="15"
+      >
+
+    </EditableTextBox>
+  </Object>
+
+  <Object name="InfoText"
+          pos="500, 290">
+    <TextComponent
+      font="arial.ttf"
+      font_size="15"
+      color="255, 30, 30"
+      >
+      
+    </TextComponent>
+  </Object>
+
+  <ProfileCreationMenu
+    message_unavailable_profile="Profile already exists! Please enter another name."
+    message_no_characters="You must enter at least one character!"
+    >
+    
+  </ProfileCreationMenu>
+
+</Object>

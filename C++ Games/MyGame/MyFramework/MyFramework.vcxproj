@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Src\App.cpp" />
+    <ClCompile Include="..\Src\Console\ConsoleCommandsHandler.cpp" />
+    <ClCompile Include="..\Src\Console\ConsoleComponent.cpp" />
+    <ClCompile Include="..\Src\Console\ConsoleInputHandler.cpp" />
+    <ClCompile Include="..\Src\Factory\ComponentCreator.cpp" />
+    <ClCompile Include="..\Src\Factory\ComponentCreatorImpl.cpp" />
+    <ClCompile Include="..\Src\Factory\ComponentFactory.cpp" />
+    <ClCompile Include="..\Src\Helpers\Helpers.cpp" />
+    <ClCompile Include="..\Src\Helpers\RNG.cpp" />
+    <ClCompile Include="..\Src\Input\Input.cpp" />
+    <ClCompile Include="..\Src\Main.cpp" />
+    <ClCompile Include="..\Src\Map\Map.cpp" />
+    <ClCompile Include="..\Src\Map\MapComponent.cpp" />
+    <ClCompile Include="..\Src\Map\MapGenerator.cpp" />
+    <ClCompile Include="..\Src\Map\Tile.cpp" />
+    <ClCompile Include="..\Src\Menus\GamePausedMenu.cpp" />
+    <ClCompile Include="..\Src\Menus\MainGame.cpp" />
+    <ClCompile Include="..\Src\Menus\MainMenu.cpp" />
+    <ClCompile Include="..\Src\Menus\MenuHandler.cpp" />
+    <ClCompile Include="..\Src\Menus\OptionsManager.cpp" />
+    <ClCompile Include="..\Src\Menus\OptionsMenu.cpp" />
+    <ClCompile Include="..\Src\Menus\ProfileCreationMenu.cpp" />
+    <ClCompile Include="..\Src\Profiles\Profile.cpp" />
+    <ClCompile Include="..\Src\Profiles\ProfilesManager.cpp" />
+    <ClCompile Include="..\Src\Scene\ButtonComponent.cpp" />
+    <ClCompile Include="..\Src\Scene\CheckboxComponent.cpp" />
+    <ClCompile Include="..\Src\Scene\Component.cpp" />
+    <ClCompile Include="..\Src\Scene\EditableTextBox.cpp" />
+    <ClCompile Include="..\Src\Scene\InputTextBoxComponent.cpp" />
+    <ClCompile Include="..\Src\Scene\Object.cpp" />
+    <ClCompile Include="..\Src\Scene\ObjectHelpers.cpp" />
+    <ClCompile Include="..\Src\Scene\PlayerMovementComponent.cpp" />
+    <ClCompile Include="..\Src\Scene\Scene.cpp" />
+    <ClCompile Include="..\Src\Scene\SpriteComponent.cpp" />
+    <ClCompile Include="..\Src\Scene\SpriteSheetComponent.cpp" />
+    <ClCompile Include="..\Src\Scene\TextComponent.cpp" />
+    <ClCompile Include="..\Src\STAT.cpp" />
+    <ClCompile Include="..\Src\tinyxml\tinystr.cpp" />
+    <ClCompile Include="..\Src\tinyxml\tinyxml.cpp" />
+    <ClCompile Include="..\Src\tinyxml\tinyxmlerror.cpp" />
+    <ClCompile Include="..\Src\tinyxml\tinyxmlparser.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Src\App.h" />
+    <ClInclude Include="..\Src\Console\ConsoleCommandsHandler.h" />
+    <ClInclude Include="..\Src\Console\ConsoleComponent.h" />
+    <ClInclude Include="..\Src\Console\ConsoleInputHandler.h" />
+    <ClInclude Include="..\Src\Factory\ComponentCreator.h" />
+    <ClInclude Include="..\Src\Factory\ComponentCreatorImpl.h" />
+    <ClInclude Include="..\Src\Factory\ComponentFactory.h" />
+    <ClInclude Include="..\Src\Helpers\Helpers.h" />
+    <ClInclude Include="..\Src\Helpers\RNG.h" />
+    <ClInclude Include="..\Src\Input\Input.h" />
+    <ClInclude Include="..\Src\Map\Map.h" />
+    <ClInclude Include="..\Src\Map\MapComponent.h" />
+    <ClInclude Include="..\Src\Map\MapGenerator.h" />
+    <ClInclude Include="..\Src\Map\Tile.h" />
+    <ClInclude Include="..\Src\Menus\GamePausedMenu.h" />
+    <ClInclude Include="..\Src\Menus\MainGame.h" />
+    <ClInclude Include="..\Src\Menus\MainMenu.h" />
+    <ClInclude Include="..\Src\Menus\MenuHandler.h" />
+    <ClInclude Include="..\Src\Menus\OptionsManager.h" />
+    <ClInclude Include="..\Src\Menus\OptionsMenu.h" />
+    <ClInclude Include="..\Src\Menus\ProfileCreationMenu.h" />
+    <ClInclude Include="..\Src\Profiles\Profile.h" />
+    <ClInclude Include="..\Src\Profiles\ProfilesManager.h" />
+    <ClInclude Include="..\Src\Scene\ButtonComponent.h" />
+    <ClInclude Include="..\Src\Scene\CheckboxComponent.h" />
+    <ClInclude Include="..\Src\Scene\Component.h" />
+    <ClInclude Include="..\Src\Scene\EditableTextBox.h" />
+    <ClInclude Include="..\Src\Scene\InputTextBoxComponent.h" />
+    <ClInclude Include="..\Src\Scene\Object.h" />
+    <ClInclude Include="..\Src\Scene\ObjectHelpers.h" />
+    <ClInclude Include="..\Src\Scene\PlayerMovementComponent.h" />
+    <ClInclude Include="..\Src\Scene\Scene.h" />
+    <ClInclude Include="..\Src\Scene\SpriteComponent.h" />
+    <ClInclude Include="..\Src\Scene\SpriteSheetComponent.h" />
+    <ClInclude Include="..\Src\Scene\TextComponent.h" />
+    <ClInclude Include="..\Src\STAT.h" />
+    <ClInclude Include="..\Src\stdincl.h" />
+    <ClInclude Include="..\Src\tinyxml\tinystr.h" />
+    <ClInclude Include="..\Src\tinyxml\tinyxml.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MyFramework.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Resources\apply_button_shaded.png" />
+    <Image Include="icon1.ico" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0D333CBD-B1B9-4AA5-ACFA-C28442426148}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>MyFramework</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\SFML-2.3.1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\SFML-2.3.1\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\SFML-2.3.1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\SFML-2.3.1\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\PAUL\University\Visual Studio Workspace\MyFramework\Resources;C:\PAUL\University\Visual Studio Workspace\MyFramework\Src\Profiles;C:\PAUL\University\Visual Studio Workspace\MyFramework\Src\Map;C:\PAUL\University\Visual Studio Workspace\MyFramework\Src\Helpers;C:\PAUL\University\C++ libraries\SFML-2.3.1\include;C:\PAUL\University\Visual Studio Workspace\MyFramework\Src\tinyxml;C:\PAUL\University\Visual Studio Workspace\MyFramework\Src\Scene;C:\PAUL\University\Visual Studio Workspace\MyFramework\Src\Menus;C:\PAUL\University\Visual Studio Workspace\MyFramework\Src\Input;C:\PAUL\University\Visual Studio Workspace\MyFramework\Src\Factory;C:\PAUL\University\Visual Studio Workspace\MyFramework\Src\Console;C:\PAUL\University\Visual Studio Workspace\MyFramework\Src</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>sfml-graphics-d.lib;sfml-window-d.lib;sfml-main-d.lib;sfml-system-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\PAUL\University\C++ libraries\SFML-2.3.1\lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\PAUL\University\Visual Studio Workspace\MyFramework\Src\Profiles;C:\PAUL\University\Visual Studio Workspace\MyFramework\Src\Helpers;C:\PAUL\University\C++ libraries\SFML-2.3.1\include;C:\PAUL\University\Visual Studio Workspace\MyFramework\Src\tinyxml;C:\PAUL\University\Visual Studio Workspace\MyFramework\Src\Scene;C:\PAUL\University\Visual Studio Workspace\MyFramework\Src\Menus;C:\PAUL\University\Visual Studio Workspace\MyFramework\Src\Input;C:\PAUL\University\Visual Studio Workspace\MyFramework\Src\Factory;C:\PAUL\University\Visual Studio Workspace\MyFramework\Src\Console;C:\PAUL\University\Visual Studio Workspace\MyFramework\Src</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>sfml-graphics.lib;sfml-window.lib;sfml-system.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\PAUL\University\C++ libraries\SFML-2.3.1\lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='us-ascii'?>
+
+<Object name="MainMenu" rotation="0">
+
+  <SpriteComponent
+    texture ="main_menu.png"
+    size="1280, 720"
+    >
+  </SpriteComponent>
+
+  <Object name="Play"
+        pos="530, 180"
+          >
+
+    <ButtonComponent
+      texture_focused ="simple_button_background_focused.png"
+      texture_unfocused ="simple_button_background.png"
+      next_menu ="GameMenu"
+      size="100, 40"
+      type ="menu_changer"
+      text="Play"
+      text_font="bellota.otf"
+      text_size="25"
+      text_color="100, 100, 100"
+      text_highlight_color="10, 10, 255"
+      has_textures="1"
+      text_highlights="1"
+      >
+
+    </ButtonComponent>
+  </Object>
+
+  <Object name="ChangeProfile"
+          pos="530, 250"
+          >
+
+    <ButtonComponent
+      texture_focused ="simple_button_background_focused.png"
+      texture_unfocused ="simple_button_background.png"
+      next_menu ="ProfilesListMenu"
+      size="220, 40"
+      type ="menu_changer"
+      text="Change Profile"
+      text_font="bellota.otf"
+      text_size="25"
+      text_color="100, 100, 100"
+      text_highlight_color="10, 10, 255"
+      has_textures="1"
+      text_highlights="1"
+      >
+
+    </ButtonComponent>
+  </Object>
+
+  <Object name="NewProfile"
+          pos="557, 300"
+          >
+
+    <ButtonComponent
+      texture_focused ="simple_button_background_focused.png"
+      texture_unfocused ="simple_button_background.png"
+      next_menu ="ProfileCreationMenu"
+      size="166, 40"
+      type ="menu_changer"
+      text="New Profile"
+      text_font="bellota.otf"
+      text_size="25"
+      text_color="100, 100, 100"
+      text_highlight_color="10, 10, 255"
+      has_textures="1"
+      text_highlights="1"
+      >
+    
+    </ButtonComponent>
+  </Object>
+
+  <Object name="OptionsButton"
+          pos="575.5, 350"
+          >
+    <ButtonComponent 
+      texture_focused ="simple_button_background_focused.png"
+      texture_unfocused ="simple_button_background.png"
+      next_menu ="OptionsMenu"
+      size="129, 40"
+      type ="menu_changer"
+      text="Options"
+      text_font="bellota.otf"
+      text_size="25"
+      text_color="100, 100, 100"
+      text_highlight_color="10, 10, 255"
+      has_textures="1"
+      text_highlights="1"
+      >
+    
+    </ButtonComponent>
+  </Object>
+
+  <Object name="ExitButton"
+          pos="597.5, 400"
+          >
+    <ButtonComponent 
+     texture_focused ="simple_button_background_focused.png"
+     texture_unfocused ="simple_button_background.png"
+     size="85, 40"
+     type ="exit"
+     text="Exit"
+     text_font="bellota.otf"
+     text_size="25"
+     text_color="100, 100, 100"
+     text_highlight_color="10, 10, 255"
+     has_textures="1"
+     text_highlights="1"
+      >
+      
+    </ButtonComponent>
+  </Object>
+
+  <Object name="CurrentProfileDescriptor"
+          pos="100, 50"
+          >
+    <TextComponent
+      font="bellota.otf"
+      font_size="25"
+      color="150, 250, 150"
+      text="Current Profile: "
+      >
+      
+    </TextComponent>
+  </Object>
+
+  <Object name="CurrentProfile"
+          pos="300, 50"
+          >
+    <TextComponent
+      font="bellota.otf"
+      font_size="25"
+      color="150, 250, 150"
+      >
+    </TextComponent>
+  </Object>
+
+  <MainMenu>
+
+  </MainMenu>
+
+</Object>
