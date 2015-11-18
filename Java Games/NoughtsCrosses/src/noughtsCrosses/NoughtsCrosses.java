@@ -107,8 +107,6 @@ Determine who (if anyone) has won
 		}
 	}
 	
-	
-	
 /**
 Start a new game
 */

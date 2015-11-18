@@ -18,7 +18,5 @@ public class MineComponent extends JPanel
 		
 		add(view,BorderLayout.CENTER);	
 		add(panel,BorderLayout.SOUTH);	
-	
 	}
-
 }

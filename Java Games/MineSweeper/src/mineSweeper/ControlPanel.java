@@ -17,58 +17,53 @@ public class ControlPanel extends JPanel
 		JButton reveal = new JButton("Reveal");
 
 		final JRadioButton easy = new JRadioButton("Easy");
-     	final	JRadioButton normal = new JRadioButton("Normal");
+     		final JRadioButton normal = new JRadioButton("Normal");
 		final JRadioButton hard = new JRadioButton("Hard");
 
 		easy.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent e)
 			{
-				public void actionPerformed(ActionEvent e)
+				if(easy.isSelected())
 				{
-					if(easy.isSelected())
-					{
 					easy.setSelected(true);
 					normal.setSelected(false);
 					hard.setSelected(false);
 					model.setMines(10);
 					model.newGame();
-					}
 				}
 			}
-		);
+		});
    
 		normal.addActionListener(new ActionListener()
-			
-			
-			{
-				public void actionPerformed(ActionEvent e)
-				{	
-					if(normal.isSelected())
-					{
+		{
+			public void actionPerformed(ActionEvent e)
+			{	
+				if(normal.isSelected())
+				{
 					easy.setSelected(false);
 					normal.setSelected(true);
 					hard.setSelected(false);
 					model.setMines(15);
 					model.newGame();
-					}
-				}	
-			}
-		);
+				}
+			}	
+		});
 
 		hard.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent e)
 			{
-				public void actionPerformed(ActionEvent e)
+				if(hard.isSelected())
 				{
-					if(hard.isSelected())
-					{
 					easy.setSelected(false);
 					normal.setSelected(false);
 					hard.setSelected(true);
 					model.setMines(20);
 					model.newGame();
-					}
 				}
 			}
-		);
+		});
 
 		reveal.addActionListener(new ActionListener()
 			{
@@ -81,22 +76,20 @@ public class ControlPanel extends JPanel
 
 
 		reset.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent e)
 			{
-				public void actionPerformed(ActionEvent e)
-				{
-					model.newGame();
-				}
+				model.newGame();
 			}
-		);
+		});
 
 		exit.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent e)
 			{
-				public void actionPerformed(ActionEvent e)
-				{
-					 System.exit(0);
-				}
+				 System.exit(0);
 			}
-		);
+		});
 		
 		add(easy);
 		add(normal);

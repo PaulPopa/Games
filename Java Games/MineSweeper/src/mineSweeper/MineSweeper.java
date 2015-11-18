@@ -21,6 +21,7 @@ Create a new game with empty board
 		generator=new Random();
 		board=new int[10][10];
 		cell=new int[10][10];
+
 		for(int i=0;i<10;i++)
 		{
 			for(int j=0;j<10;j++)
@@ -62,74 +63,67 @@ Create a new game with empty board
 				board[r+1][c]++;
 				board[r+1][c+1]++;
 			}
+			else if(r==9 && c==9)
+			{
+				board[r][c-1]++;
+				board[r-1][c-1]++;
+				board[r-1][c]++;
+			}
+			else if(r==0 && c==9)
+			{
+				board[r][c-1]++;
+				board[r+1][c-1]++;
+				board[r+1][c]++;
+			}
+			else if(r==9 && c==0)
+			{
+				board[r][c+1]++;
+				board[r-1][c]++;
+				board[r-1][c+1]++;
+			}
+			else if(r==0)
+			{
+				board[r][c-1]++;
+				board[r][c+1]++;
+				board[r+1][c]++;
+				board[r+1][c-1]++;
+				board[r+1][c+1]++;
+			}
+			else if(r==9)
+			{
+				board[r][c-1]++;
+				board[r][c+1]++;
+				board[r-1][c]++;
+				board[r-1][c-1]++;
+				board[r-1][c+1]++;
+			}
+			else if(c==0)
+			{
+				board[r-1][c]++;
+				board[r+1][c]++;
+				board[r+1][c+1]++;
+				board[r-1][c+1]++;
+				board[r][c+1]++;
+			}
+			else if(c==9)
+			{
+				board[r][c-1]++;
+				board[r+1][c]++;
+				board[r+1][c-1]++;
+				board[r-1][c-1]++;
+				board[r-1][c]++;
+			}
 			else
-				if(r==9 && c==9)
-				{
-					board[r][c-1]++;
-					board[r-1][c-1]++;
-					board[r-1][c]++;
-				}
-				else
-					if(r==0 && c==9)
-					{
-						board[r][c-1]++;
-						board[r+1][c-1]++;
-						board[r+1][c]++;
-					}
-					else
-						if(r==9 && c==0)
-						{
-							board[r][c+1]++;
-							board[r-1][c]++;
-							board[r-1][c+1]++;
-						}
-						else
-							if(r==0)
-							{
-								board[r][c-1]++;
-								board[r][c+1]++;
-								board[r+1][c]++;
-								board[r+1][c-1]++;
-								board[r+1][c+1]++;
-							}
-							else
-								if(r==9)
-								{
-									board[r][c-1]++;
-									board[r][c+1]++;
-									board[r-1][c]++;
-									board[r-1][c-1]++;
-									board[r-1][c+1]++;
-								}
-								else
-									if(c==0)
-									{
-										board[r-1][c]++;
-										board[r+1][c]++;
-										board[r+1][c+1]++;
-										board[r-1][c+1]++;
-										board[r][c+1]++;
-									}
-									else
-										if(c==9)
-										{
-											board[r][c-1]++;
-											board[r+1][c]++;
-											board[r+1][c-1]++;
-											board[r-1][c-1]++;
-											board[r-1][c]++;
-										}
-										else
-										{
-											board[r][c-1]++;
-											board[r][c+1]++;
-											board[r-1][c]++;
-											board[r-1][c-1]++;
-											board[r-1][c+1]++;
-											board[r+1][c]++;
-											board[r+1][c+1]++;
-											board[r+1][c-1]++;
-										}
+			{
+				board[r][c-1]++;
+				board[r][c+1]++;
+				board[r-1][c]++;
+				board[r-1][c-1]++;
+				board[r-1][c+1]++;
+				board[r+1][c]++;
+				board[r+1][c+1]++;
+				board[r+1][c-1]++;
+			}
 		}
 	}
 
@@ -177,6 +171,7 @@ Create a new game with empty board
 		generator=new Random();
 		board=new int[10][10];
 		cell=new int[10][10];
+
 		for(int i=0;i<10;i++)
 		{
 			for(int j=0;j<10;j++)
@@ -184,7 +179,6 @@ Create a new game with empty board
 				board[i][j]=BLANK;
 				cell[i][j]=EMPTY;
 			}
-		
 		}
 		calcBoard();
 	}
