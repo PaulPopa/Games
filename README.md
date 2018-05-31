@@ -1,2 +1,2 @@
 # Games
-Games created in programming languages
+MSci Computer Science - Games
